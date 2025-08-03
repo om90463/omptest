@@ -14,4 +14,7 @@ class UserController extends Controller
         event(new UserRegistered($user));
         return response()->json(['message' => 'User registered successfully']);
     }
+    public function userq(Request $request){
+        dd($request->all());
+    }
 }
